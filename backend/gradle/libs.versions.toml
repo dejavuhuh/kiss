@@ -1,0 +1,17 @@
+[versions]
+kotlin = "1.9.25"
+ksp = "1.9.25+"
+spring-boot = "3.3.5"
+jimmer-plugin = "latest.release"
+kotlin-logging = "7.0.0"
+
+[libraries]
+spring-boot-dependencies = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "spring-boot" }
+kotlin-logging = { group = "io.github.oshai", name = "kotlin-logging-jvm", version.ref = "kotlin-logging" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+jimmer = { id = "tech.argonariod.gradle-plugin-jimmer", version.ref = "jimmer-plugin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
